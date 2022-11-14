@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>First</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container flex j-around">
+        <div class="form flex f-column j-center">
+            <label for="name">Name: </label>
+            <input id="name" type="text" class="name" placeholder="Enter your name">
+            <label for="message">Text: </label>
+            <textarea id="message" rows="5" class="message" placeholder="Enter your text"></textarea>
+            <button class="btn btn-send" onclick="sendMessage()">Send</button>
+            <button class="btn btn-show" onclick="showHistory()">Show history</button>
+        </div>
+        <div class="history flex f-column" id="history">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
